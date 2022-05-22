@@ -1,0 +1,52 @@
+body {
+    background: url(ФОН.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 10%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.clock{
+    box-shadow: 0 0 10px white;
+    width: 300px;
+    height: 300px;
+    border: 15px solid white;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+}
+
+.hand {
+    border: 2px solid black;
+    width: 2px;
+    position: absolute;
+    background-color: gold;
+    left: 50%;
+    transform-origin: bottom center;
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.sec {
+   height: 45%; 
+   top: 5%;
+}
+
+.min {
+    height: 35%;
+    top: 15%;
+}
+
+.hour {
+    height: 25%;
+    top: 25%;
+}
